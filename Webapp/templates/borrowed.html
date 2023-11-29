@@ -4,7 +4,7 @@
 <form id="borrowed-form">
     <div>
         <div>
-            <h1 class="head"><a class="c"  href="/" id="log">Members Info</h1>
+            <h1 class="head"><a class="c"  href="/" id="log"> Borrowed Books</h1>
         </div>
         
         <div>
@@ -12,7 +12,7 @@
                 name="search_query" autocomplete="off">
         </div>
         <div id="rect4" class="table-responsive-lg">
-            <table class="table table-hover table-sm table-borderless align-middle">
+            <table class="table table-hover table-sm table-border align-middle">
                 <thead>
                     <tr>
                         <!-- <th scope="col">#</th> -->
@@ -24,8 +24,24 @@
                         <th scope="col">Status</th>
                     </tr>
                 </thead>
-                <tbody> 
-                    {% if data %}
+                <tbody class="bg"> 
+                    <tr>
+                        <td> ha </td>
+                        <td> ha </td>
+                        <td> ha </td>
+                        <td> ha </td>
+                        <td> ha </td>
+                        <td> ha </td>
+                    </tr>
+                    <tr>
+                        <td> ha </td>
+                        <td> ha </td>
+                        <td> ha </td>
+                        <td> ha </td>
+                        <td> ha </td>
+                        <td> ha </td>
+                    </tr>
+                    <!-- {% if data %}
                         {% for row in data %}
                             <tr>
                                 <td>{{ row['staff_librarian'] }}</td>
@@ -39,7 +55,7 @@
                         <tr>
                             <td colspan="3">No data available</td>
                         </tr>
-                    {% endif %}
+                    {% endif %} -->
                 </tbody>
             </table>
         </div>

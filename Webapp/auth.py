@@ -255,20 +255,21 @@ def borrowers():
 
 @auth.route('/borrowed_record')
 def borrowed_record():
-    try:
-        db = current_app.get_db()
-        cursor = db.cursor()
+    # try:
+    #     db = current_app.get_db()
+    #     cursor = db.cursor()
         
-        query = "SELECT * FROM bb_rec"
-        cursor.execute(query,)
-        data = cursor.fetchall()
+    #     query = "SELECT * FROM bb_rec"
+    #     cursor.execute(query,)
+    #     data = cursor.fetchall()
         
 
-        return render_template('borrowed.html', data=data)
-    except Exception as e:
-        print("Exception:", e)
-        return jsonify({'error': 'An error occurred during data retrieval'})
-    
+    #     return render_template('borrowed.html', data=data)
+    # except Exception as e:
+    #     print("Exception:", e)
+    #     return jsonify({'error': 'An error occurred during data retrieval'})
+    return (render_template('borrowed.html'))
+
 @auth.route('/borrower_list/<full_name>')
 def generate_qr(full_name):
     # Create a QR code with the full name
