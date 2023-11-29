@@ -238,6 +238,7 @@
     } 
     .bg{
         background: rgba(0, 0, 111, 0.5);
+        color: #000000;
     }
     th {
         position: sticky;
